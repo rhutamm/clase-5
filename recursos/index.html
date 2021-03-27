@@ -4,91 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practica CSS</title>
+    <title>Playas de Nicaragua</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="css/index.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lora&family=Noto+Serif&display=swap" rel="stylesheet">
-
-
 </head>
 <body>
-    <header id="header">
-        <nav>
-            <ul>
-                <li class="fas fa-home"><a href="index.html">  Home</a></li>
-                <li class="fas fa-id-card"><a href="contactos"> Contactos</a></li>
+    <header id="Barra" class="container-fluid">
+      <div class="">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand col-md-2" href="#">
+                <img src="imagenes/icon.png" width="50" height="50" alt="">Nuestras Playas</a>
+
+            <ul class="navbar nav col-md-10 flex-row justify-content-end">
+                <li class="nav item"><a href="#" class="nav-link">Home <i class="fas fa-home"></i></a></li>
+                <li class="nav item"><a href="#" class="nav-link">Contact <i class="fas fa-id-card"></i></a></li>
             </ul>
         </nav>
+      </div>
     </header>
-    <main>
-        <section id="tapContenedor">
-            <ul>
-                 <li class="botones"><a href="#divProd">Productos</a></li>
-                <li class="botones"><a href="#divServicios">Servicios</a></li>
-                <li class="botones"><a href="#divAsesorias">Asesorias</a></li>
+    <section id="principal">
+        <article id="lateral">
+            <nav class="navbar flex-column">
+            <ul class="navbar nav">
+                <li class="nav-item"><a href="#" class="nav-link">Playas</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Lagos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Lagunas</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Otros</a></li>
             </ul>
-            <section id="tapContenido">
-            <div id="divProd" class="fab fa-product-hunt">
-                <h2>Nuestros Productos</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur eveniet eius repellat, blanditiis vero dicta, repellendus ratione rem nemo autem odio aperiam ullam ab? Magni cum eius quia aspernatur labore.
-                </p>
-            </div>
-            <div id="divServicios" class="fas fa-handshake">
-                <h2>Nuestros Servicios</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur eveniet eius repellat, blanditiis vero dicta, repellendus ratione rem nemo autem odio aperiam ullam ab? Magni cum eius quia aspernatur labore.
-                </p>
-            </div>
-            <div id="divAsesorias" class="fas fa-phone-volume">
-                <h2>Nuestras Asesorias</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur eveniet eius repellat, blanditiis vero dicta, repellendus ratione rem nemo autem odio aperiam ullam ab? Magni cum eius quia aspernatur labore.
-                </p>
-            </div>
-        </section>
-        </section> 
-        <div id="detalleInfo">
-            <table>
-                <tr>
-                    <th>Codigo</th>
-                    <th>Nombre</th>
-                    <th>Observaciones</th>
-                </tr>
-                <tr>
-                    <td>Prod01</td>
-                    <td>Producto 01</td>
-                    <td>Algunos Comentarios</td>
-                </tr>
-                <tr>
-                    <td>Prod02</td>
-                    <td>Producto 02</td>
-                    <td>Algunos Comentarios</td>
-                </tr>
-                <tr>
-                    <td>Serv01</td>
-                    <td>Servicio 01</td>
-                    <td>Algunos Comentarios</td>
-                </tr>
-                <tr>
-                    <td>Serv02</td>
-                    <td>Servicio 02</td>
-                    <td>Algunos Comentarios</td>
-                </tr>
-                <tr>
-                    <td>Asesorias</td>
-                    <td>Asesorias Creativas</td>
-                    <td>Algunos Comentarios</td>
-                </tr>
-            </table>
-        </div>
-        <footer>
-            <ul>
-                <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href=""><i class="fab fa-twitter"></i></a></li>
-            </ul>
-        </footer>
-    </main>
+            </nav>
+        
+        </article>
+        <main id="central">
+            <header id="banner">
+
+            </header>
+            <section id="contenido">
+
+            </section>
+            <footer id="piePag">
+
+            </footer>
+        </main>
+    </section>
 </body>
 </html>
